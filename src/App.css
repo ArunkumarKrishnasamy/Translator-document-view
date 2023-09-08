@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway&display=swap");
+* {
+  /* max-width: 1280px; */
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  appearance: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  /* text-align: center; */
+}
+body {
+  background-color: #ecf9fd;
+  overflow: hidden;
+}
+:root {
+  --color-white: #ffffff;
+  --color-light-blue: #f2fbfe;
+  --color-blue: #2bb8e6;
+  --color-gray-light: #f2f2f2;
+  --color-gray-dark: #606060;
+  --color-dark: pink;
+  --color-primary: #e6592b;
+  /* --color-sucess-light:;
+	--color-danger-light:;
+	--color-blue-light:;  */
+  --card-padding: 1.6rem;
+  --padding-1: 1rem;
+  --padding-2: 8px;
+}
+nav {
+  width: 100%;
+  background: var(--color-white);
+  padding: 1rem 0;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 96%;
+  margin: 0 auto;
+}
+nav img.logo {
+  width: 10rem;
+}
+
+nav .search-bar {
+  background: var(--color-gray-light);
+  padding: var(--padding-2) var(--card-padding);
+  width: 32vw;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-gray-dark);
+  position: absolute;
+  left: 35%;
+}
+nav .search-bar input[type="search"] {
+  color: #000000;
+  background: transparent;
+  width: 100%;
+}
+nav .search-bar input[type="search"]::placeholder {
+  color: var(--color-gray-dark);
+}
+nav .profile-area {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  /* gap: 2x; */
+  margin-right: 30px;
+  float: right;
+}
+nav .profile-area .profile {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  align-items: center;
+  float: right;
+}
+nav .profile-area .profile-photo {
+  display: flex;
+  /* float: right; */
+  margin-top: 3px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  /* overflow: hidden; */
+}
+nav .profile-area button {
+  display: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 800, "GRAD" 800, "opsz" 100;
+  margin: 5px;
+}
+
+.content-wrapper {
+  background-color: #ecf9fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="file"]::file-selector-button {
+  margin-top: 100px;
+  width: 150px;
+  height: 35px;
+  border: none;
+  background-color: white;
+  border: 1px solid #2bb8e6;
+  border-radius: 4px;
+  opacity: 0.75;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+input[type="file"]::file-selector-button:hover {
+  width: 175px;
+  height: 38px;
+  opacity: 1;
+  background-color: #2bb8e6;
+  font-family: "Raleway", sans-serif;
+  /* cursor: pointer; */
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+.view-doc-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow-y: scroll; */
+}
+.view-document {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  width: 1000px;
+  height: 373px;
+  margin: 2em;
+  border: 2px solid #2bb8e6;
+  border-radius: 3px;
+}
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.translator-input {
+  width: 1000px;
+  height: 466px;
+  border: none;
+  padding: 10px;
+  /* margin-top: 2em; */
+}
+.translator-input:hover {
+  border: 2px solid #2bb8e6;
+  border-radius: 3px;
+}
+.notification-icon {
+  height: 10px;
+  width: 5px;
+}
+main {
+  display: grid;
+  grid-template-columns: 16rem auto;
+  gap: 2rem;
+  max-width: 100%;
+  /* margin: 0.5rem; */
+}
+main aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 88vh;
+  background: var(--color-white);
+}
+.doc-translator {
+  display: flex;
+
+  justify-content: center;
+  /* margin-left: 185px; */
+}
+.sidebar {
+  background: var(--color-white);
+}
+.sidebar a {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+  height: 4.2rem;
+  color: var(--color-gray-dark);
+  position: relative;
+  background: var(--color-white);
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+/* .redirect-button {
+  display: inline-flex;
+  margin-left: 0;
+} */
